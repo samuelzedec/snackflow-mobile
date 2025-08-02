@@ -5,18 +5,15 @@ node_modules/
 
 # Expo
 .expo/
+.expo-shared/
 dist/
 web-build/
 expo-env.d.ts
 
-# Native
-.kotlin/
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
+# Native (caso use prebuild ou eject)
+ios/Pods/
+android/.gradle/
+android/app/build/
 
 # Metro
 .metro-health-check*
@@ -25,15 +22,29 @@ expo-env.d.ts
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+*.log
 
 # macOS
 .DS_Store
+*.orig.*
 *.pem
 
+# Certificates and keys
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
 # local env files
+.env
 .env*.local
 
 # typescript
 *.tsbuildinfo
 
+# IDE
+.vscode/
+
+# App examples (caso tenha deixado arquivos de exemplo)
 app-example
