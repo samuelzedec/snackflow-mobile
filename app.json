@@ -3,8 +3,13 @@
     "name": "snackflow-mobile",
     "slug": "snackflow-mobile",
     "version": "1.0.0",
-     "android": {
-      "package": "com.jgabriel.snackflow"
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.snackflowmobile"
     },
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -14,14 +19,6 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.anonymous.snackflow-mobile"
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true,
-      "package": "com.anonymous.snackflowmobile"
     },
     "web": {
       "bundler": "metro",
@@ -44,7 +41,8 @@
         {
           "faceIDPermission": "Allow $(PRODUCT_NAME) to use Face ID."
         }
-      ]
+      ],
+      "expo-secure-store"
     ],
     "experiments": {
       "typedRoutes": true
